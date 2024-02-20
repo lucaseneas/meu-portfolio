@@ -1,0 +1,37 @@
+.showInFullScreen{
+    background-color: rgb(37, 37, 37);
+    height: auto;
+    width: auto;
+    position: fixed;
+    top:5%;
+    right: 5%;
+    left: 5%;
+    bottom: 5%;
+    z-index: 15;
+    display: none;
+}
+
+.closeShowInFullScreen{
+    display: none;
+}
+.divButton{
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-end;
+}
+.divButton img{
+    margin: 8px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.imgShow{
+    height: 84vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imgShow img{
+    max-height: 100%;
+    max-width: 100%;
+}

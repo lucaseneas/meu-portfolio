@@ -1,0 +1,94 @@
+.card {
+    user-select: none;
+    width: 300px;
+    margin: 2rem auto;
+    border: 1px solid #ffffff22;
+    background-color: #282c34;
+    background: linear-gradient(0deg, rgba(40, 44, 52, 1) 0%, rgba(17, 0, 32, .5) 100%);
+    box-shadow: 0 7px 20px 5px #00000088;
+    border-radius: .7rem;
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    overflow: hidden;
+    transition: .5s all;
+}
+
+.card hr {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #88888855;
+    margin-top: 0;
+}
+
+
+
+.card .main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+}
+
+.projectImage {
+    border-radius: .5rem;
+    max-width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.description {
+    height: 85px;
+    margin: .5rem 0;
+    color: #a89ec9;
+}
+
+.technologies {
+    height: 70px;
+    font-weight: 700;
+    color: #dbdbdb;
+}
+
+.technologiesDiv {
+    display: flex;
+
+
+}
+
+.technologiesDiv div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    margin: 4px;
+}
+
+.technologiesDiv p {
+    width: 90%;
+
+}
+
+
+.showMore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.showMore button {
+    font-size: 16px;
+    padding: 2% 10% 2% 10%;
+    background-color: transparent;
+    border: 4px solid;
+    border-image: var(--gradient) 1;
+    cursor: pointer;
+}
+
+
+
+.card:hover {
+    border: 1px solid #ffffff44;
+    box-shadow: 0 7px 50px 10px #000000aa;
+    transform: scale(1.015);
+    filter: brightness(1.3);
+}

@@ -1,0 +1,93 @@
+.spinner {
+  margin: 5%;
+  background-image: var(--gradient);
+  width: 400px;
+  height: 400px;
+  animation: rotate 1.7s infinite linear;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0px -5px 20px 0px rgb(186, 66, 255), 0px 5px 20px 0px rgb(0, 225, 255);
+  overflow: hidden;
+}
+
+
+
+.spinner1 {
+  background-color: rgb(36, 36, 36);
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  animation: test 1.7s infinite linear;
+  color:white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.spinner1 h3{
+ font-size: 200%;
+}
+.spinner1 p{
+  font-size: 150%;
+ }
+
+ .spinner1 img{
+  width: 30% ;
+ }
+
+ .spinner1:hover img{
+  animation: flip 1s linear infinite;
+  
+ }
+
+ @keyframes flip {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(360deg);
+  }
+  100%{
+    transform: rotateY(720deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes test {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+/*---------------------------------------------------*/
+
+/*mobile*/
+@media (min-device-width: 200px) and (max-device-width: 430px) {
+  .spinner {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .spinner1 {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .spinner1 h3{
+   font-size: 170%;
+  }
+    
+}
