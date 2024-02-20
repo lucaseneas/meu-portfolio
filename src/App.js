@@ -190,20 +190,20 @@ function App() {
           <h2 className="title"> Experiencias Profissionais</h2>
           <div className='divJobs'>
             <div className='jobs'>
-              <button onClick={() => changeJobText("3Ases")}>3 Ases Comercio de Materiais de Higiene EPP</button>
-              <button onClick={() => changeJobText("PMESP")}>Governo do Estado de São Paulo</button>
-              <button onClick={() => changeJobText("PalmLabs")}>Palm Labs</button>
               <button onClick={() => changeJobText("DEC")}>DEC - Diretoria de Educação e Cultura</button>
+              <button onClick={() => changeJobText("PalmLabs")}>Palm Labs</button>
+              <button onClick={() => changeJobText("PMESP")}>Governo do Estado de São Paulo</button>
+              <button onClick={() => changeJobText("3Ases")}>3 Ases Comercio de Materiais de Higiene EPP</button>
             </div>
             <div className='jobDescription'>
               <div className='jobDescriptionInternal'>
-                <img id='jobLogo' src={logoPalmLabs}></img>
+                <img id='jobLogo' src={decLogo}></img>
                 <div>
-                  <h6 id='jobPeriod' > 2016 - 2017</h6>
-                  <h6 id='jobTitle'> Auxiliar administrativo</h6>
+                  <h6 id='jobPeriod' > 2022 - Atual</h6>
+                  <h6 id='jobTitle'>Assistente de Suporte de TI</h6>
                 </div>
               </div>
-              <p id='jobText'>Vendas em licitação, controle de pagamento, atendimento ao publico, controle de caixa e estoque.</p>
+              <p id='jobText'>Adição de novas funcionalidades e manutenção do site da unidade, controle do acesso da rede interna, criação de um projeto de logística interno feito em React Native e Java Spring Boot.</p>
             </div>
           </div>
         </section>
