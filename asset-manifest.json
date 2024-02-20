@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/meu-portifolio/static/css/main.ef1d8814.css",
+    "main.js": "/meu-portifolio/static/js/main.c3ef3e03.js",
+    "static/media/contactImage.png": "/meu-portifolio/static/media/contactImage.d02d590d0356734c2388.png",
+    "static/media/aboutImage.png": "/meu-portifolio/static/media/aboutImage.9b18985cf129865a0217.png",
+    "static/media/previewPortifolio.png": "/meu-portifolio/static/media/previewPortifolio.0b1baa6aca511fe5641c.png",
+    "static/media/certificadoLaureaQuarto.JPEG": "/meu-portifolio/static/media/certificadoLaureaQuarto.afbd54c1eaf0c63b99ea.JPEG",
+    "static/media/background.png": "/meu-portifolio/static/media/background.a15342915af14cf5b5fb.png",
+    "static/media/certificadoMedalhaMMDC.JPEG": "/meu-portifolio/static/media/certificadoMedalhaMMDC.4e573987d4b9eddaac6c.JPEG",
+    "static/media/certificadoLaureaQuinto.JPEG": "/meu-portifolio/static/media/certificadoLaureaQuinto.7a05cc33f89f1240b6cd.JPEG",
+    "static/media/soon.png": "/meu-portifolio/static/media/soon.518b2a8f6400903baa62.png",
+    "static/media/TresAsesLogo.png": "/meu-portifolio/static/media/TresAsesLogo.14490147f27a7c926612.png",
+    "static/media/laureaQuintoGrau.png": "/meu-portifolio/static/media/laureaQuintoGrau.fb6309331be15b66de7a.png",
+    "static/media/laureaQuartoGrau.png": "/meu-portifolio/static/media/laureaQuartoGrau.975442dd316c3b9697a8.png",
+    "static/media/pmespLogo.png": "/meu-portifolio/static/media/pmespLogo.e698810d5a2a26a6aeb0.png",
+    "static/media/logo.png": "/meu-portifolio/static/media/logo.708e7a38631f594cd3a9.png",
+    "static/media/decLogo.png": "/meu-portifolio/static/media/decLogo.0e63c3715637560b2e39.png",
+    "static/media/DegreeIcon.png": "/meu-portifolio/static/media/DegreeIcon.35a51150dbb2c0802d8d.png",
+    "index.html": "/meu-portifolio/index.html",
+    "main.ef1d8814.css.map": "/meu-portifolio/static/css/main.ef1d8814.css.map",
+    "main.c3ef3e03.js.map": "/meu-portifolio/static/js/main.c3ef3e03.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ef1d8814.css",
+    "static/js/main.c3ef3e03.js"
+  ]
+}
