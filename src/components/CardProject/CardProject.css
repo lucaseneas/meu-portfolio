@@ -5,7 +5,6 @@
     border: 1px solid #ffffff22;
     background-color: #282c34;
     background: linear-gradient(0deg, rgba(40, 44, 52, 1) 0%, rgba(17, 0, 32, .5) 100%);
-    box-shadow: 0 7px 20px 5px #00000088;
     border-radius: .7rem;
     backdrop-filter: blur(7px);
     -webkit-backdrop-filter: blur(7px);
@@ -88,7 +87,7 @@
 
 .card:hover {
     border: 1px solid #ffffff44;
-    box-shadow: 0 7px 50px 10px #000000aa;
+    box-shadow: -1px -1px 7px 4px #00000088;
     transform: scale(1.015);
     filter: brightness(1.3);
 }
