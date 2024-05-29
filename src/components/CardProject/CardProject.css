@@ -83,6 +83,10 @@
     cursor: pointer;
 }
 
+.showMore button a{
+    text-decoration: none;
+}
+
 
 
 .card:hover {

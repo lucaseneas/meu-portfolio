@@ -11,6 +11,7 @@ import DegreeButton from './components/DegreeButton/DegreeButton';
 import contactImage from './images/contactImage.png';
 import soonImage from './images/soon.png';
 import previewPortifolio from './images/projects/previewPortifolio.png';
+import previewNarutoCard from './images/projects/previewNarutoCard.png';
 import laureaQuintoGrau from './images/laureaQuintoGrau.png';
 import laureaQuartoGrau from './images/laureaQuartoGrau.png';
 import medalhaMMDC from './images/medalhaMMDC.png';
@@ -168,11 +169,14 @@ function App() {
             </div>
             <div className='projectColumn'>
               <CardProject
-                image={soonImage}
-                title="Em andamento"
+                image={previewNarutoCard}
+                title="Naruto Card"
+                description="Projeto de um jogo de cartas baseado no anime naruto, realizado em react.js, disponivel na versão web e responsivo para mobile"
                 technologies1={html}
                 technologies2={css}
-                technologies3={angular}
+                technologies3={react}
+                technologies4={javaScript}
+                link='/naruto-card'
               />
             </div>
             <div className='projectColumn'>

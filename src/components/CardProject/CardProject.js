@@ -1,5 +1,6 @@
 import './CardProject.css';
 
+
 function CardProject(props) {
 
     return (
@@ -19,7 +20,7 @@ function CardProject(props) {
                 </div>
                 <hr />
                 <div class='showMore'>
-                    <button>Ver Projeto</button>
+                    <button><a href={props.link}>Ver Projeto</a></button>
                 </div>
             </div>
         </div>
