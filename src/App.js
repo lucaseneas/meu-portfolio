@@ -154,7 +154,7 @@ function App() {
         {/*--------------------------------------------Projects--------------------------------------*/}
 
         <section id='projects' className='sectionProject'>
-          <h2 className="title"> Projects</h2>
+          <h2 className="title"> Projetos</h2>
           <div className='internalProjectDiv'>
             <div className='projectColumn'>
               <CardProject
