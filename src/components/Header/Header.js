@@ -18,13 +18,13 @@ function menuShow() {
     menuMobile.classList.toggle('active');
     changeMenuIcon();
 }
-/*
-  function menuClose(){
+
+function menuClose(){
     
-    document.getElementById("idMobileMenu").classList.add("active"); 
+    document.querySelector(".mobile-menu").classList.remove("active"); 
      changeMenuIcon(); 
 }
-*/
+
 
 
 function Header(props) {
@@ -59,14 +59,14 @@ function Header(props) {
             </div>
             <div id="idMobileMenu" className='mobile-menu'>
                     <ul>
-                        <li><button ><a href='#home'>Home</a></button></li>
-                        <li><button ><a href='#jobs'>Experiencias</a></button></li>
-                        <li><button ><a href='#awards'>Premiações</a></button></li>
-                        <li><button ><a href='#courses'>Cursos</a></button></li>
-                        <li><button ><a href='#projects'>Projetos</a></button></li>
-                        <li><button ><a href='#contact'>Formação</a></button></li>
-                        <li><button ><a href='#about'>Sobre</a></button></li>
-                        <li><button ><a href='#contact'>Contato</a></button></li>
+                        <li><button onClick={menuClose} ><a href='#home'>Home</a></button></li>
+                        <li><button onClick={menuClose}><a href='#jobs'>Experiencias</a></button></li>
+                        <li><button onClick={menuClose}><a href='#awards'>Premiações</a></button></li>
+                        <li><button onClick={menuClose}><a href='#courses'>Cursos</a></button></li>
+                        <li><button onClick={menuClose}><a href='#projects'>Projetos</a></button></li>
+                        <li><button onClick={menuClose}><a href='#contact'>Formação</a></button></li>
+                        <li><button onClick={menuClose}><a href='#about'>Sobre</a></button></li>
+                        <li><button onClick={menuClose}><a href='#contact'>Contato</a></button></li>
                     </ul>
                 </div>
         </nav>

@@ -542,7 +542,7 @@
     }
 
     .aboutText p {
-        margin: 0%;
+        margin: 0% 0% 7% 0%;
         font-size: 25px;
     }
 
@@ -667,6 +667,206 @@
 
     .divContactRight svg {
         width: 50px;
+    }
+
+}
+
+/*---------------------Tablet--------------------------------------------------------------------------*/
+@media screen and (min-width:601px) and (max-width: 900px) {
+    .title {
+        font-size: 60px;
+    }
+
+    /*-------------------Intro-------------------------*/
+
+    .sectionNome {
+        margin-top: 15%;
+        margin-bottom: 0%;
+    }
+
+    .firstText {
+        margin-left: 0px;
+        margin-bottom: -7%;
+    }
+
+    .firstText p {
+        font-size: 29px;
+        margin-bottom: 10px;
+    }
+
+    .firstText h1 {
+        font-size: 20vw;
+    }
+
+
+    .secondText {
+        margin-right: 0px;
+    }
+
+    .secondText p {
+        font-size: 29px;
+        margin-top: 10px;
+
+    }
+
+    .secondText h1 {
+        font-size: 20vw;
+    }
+
+    .portifolioTextLeft {
+        display: flex;
+        font-size: 30px;
+        margin: 10% 0% 10% 0%;
+        justify-content: center;
+    }
+
+
+    /*-------------------About-------------------------*/
+
+    .sectionAbout {
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .aboutText {
+        width: 90%;
+        padding: 20% 5% 5% 5%;
+        margin: -25% 3% 0% 3%;
+    }
+
+    .aboutText p {
+        margin: 0% 0% 3% 0%;
+        font-size: 25px;
+    }
+
+    .techIcon {
+        height: 40px;
+    }
+
+    .aboutImage {
+        width: 70%;
+        margin-right: 0px;
+        margin-top: -30px;
+        padding:4%;
+    }
+
+    /*-------------------Project-------------------------*/
+
+    /*-------------------Jobs-------------------------*/
+
+    .sectionJobs {
+        height: 600px;
+    }
+
+    .divJobs {
+        width: 100%;
+        flex-direction: column
+    }
+
+    .divJobs .jobs {
+        width: 100%;
+    }
+
+    .jobDescription {
+        margin-top: 10px;
+        width: 100%;
+    }
+    /*---------------------Awards-----------------------*/
+    .awardsDivInternal{
+        flex-wrap: wrap;
+    
+    }
+    /*---------------------Degrees-----------------------*/
+    .sectionDegree {
+        padding: 0%;
+    }
+    .sectionDegree h2 {
+        padding: 0%;
+        margin-left: 5%;
+    }
+
+    .degreesDivInternal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .degree {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0% 0% 0% 0%;
+        text-align: center;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    /*---------------------Courses-----------------------*/
+    .sectionCourses {
+        padding: 0%;
+    }
+    .sectionCourses h2{
+        margin-left: 5%;
+    }
+
+    .coursesDivInternal {
+        margin: 2% 2% 2% 2%;
+    }
+
+    .coursesDivButton {
+        width: 90%;
+        height: 66px;
+        margin: 1% 0% 1% 0%;
+    }
+
+    .coursesDivButtonInternal {
+        width: 97%;
+        height: 55px;
+        font-size: 25px;
+        padding: 0px 5px 0px 5px;
+    }
+
+    /*---------------------Contact-----------------------*/
+
+
+    .divContact {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .divContactLeft {
+        padding: 0%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .divContactRight {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .divContactRight p{
+        margin-left: 0px;
+    }
+
+    .divContactRight h3 {
+        font-size: 25px;
+    }
+
+    .divContactRight p {
+        font-size: 20px;
+    }
+
+    .divContactRight svg {
+        width: 50px;
+    }
+
+    .buttonContact {
+        margin-left: 0px;
     }
 
 }
