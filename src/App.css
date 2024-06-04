@@ -9,6 +9,7 @@
 
 .title {
     font-size: 70px;
+    margin: 0.5em 0em 0.5em 0em;
 }
 
 .pulse {
@@ -132,7 +133,11 @@
 .aboutText {
     width: 60%;
     height: auto;
-    background-color: #8a7fa148;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(17.5px);
+    -webkit-backdrop-filter: blur(17.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
     font-size: 2vw;
     padding: 2% 2% 2% 6%;
     border-radius: 20px;

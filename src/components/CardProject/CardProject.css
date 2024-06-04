@@ -54,10 +54,7 @@
 }
 
 .technologiesDiv div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
+    width: 35px;
     margin: 4px;
 }
 
