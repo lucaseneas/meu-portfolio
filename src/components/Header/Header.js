@@ -64,7 +64,7 @@ function Header(props) {
                         <li><button ><a href='#awards'>Premiações</a></button></li>
                         <li><button ><a href='#courses'>Cursos</a></button></li>
                         <li><button ><a href='#projects'>Projetos</a></button></li>
-                        <li><button ><a href='#contact'>Formação</a></button></li>
+                        <li><button ><a href='#degrees'>Formação</a></button></li>
                         <li><button ><a href='#about'>Sobre</a></button></li>
                         <li><button ><a href='#contact'>Contato</a></button></li>
                     </ul>

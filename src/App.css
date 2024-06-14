@@ -447,6 +447,11 @@
     z-index: 0;
 }
 
+.buttonContact img{
+    height: 70%;
+    transform: translate(-20%, 10%);
+}
+
 .buttonContactInternal {
     width: 190px;
     height: 30px;

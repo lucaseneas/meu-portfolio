@@ -20,7 +20,7 @@
     justify-content: flex-end;
 }
 .divButton img{
-    margin: 8px;
+    margin: 1vw 1vw 0vw 0vw;
     width: 30px;
     cursor: pointer;
 }
@@ -34,4 +34,10 @@
 .imgShow img{
     max-height: 100%;
     max-width: 100%;
+}
+
+@media screen and (max-width: 600px){
+    .divButton img{
+        margin: 3vw 3vw 0vw 0vw;
+    }
 }
