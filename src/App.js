@@ -19,6 +19,8 @@ import medalhaMMDC from './images/medalhaMMDC.png';
 import certificadoLaureaQuarto from './images/certificados/certificadoLaureaQuarto.JPEG';
 import certificadoLaureaQuinto from './images/certificados/certificadoLaureaQuinto.JPEG';
 import certificadoMedalhaMMDC from './images/certificados/certificadoMedalhaMMDC.JPEG';
+import degreeADS from './images/certificados/DiplomaADS.png';
+import degreeESSD from './images/certificados/DiplomaESSD.png';
 
 var python = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg";
 var html = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg";
@@ -32,7 +34,7 @@ var bootstrap = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bo
 var gitHub = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg";
 var mySql = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg";
 
-function activeFullScreen(src){
+export function activeFullScreen(src){
   const showInFullScreen = document.querySelector('.showInFullScreen');
     showInFullScreen.classList.add('active');
 
@@ -267,6 +269,7 @@ function App() {
                 title="Análise e Desenvolvimento de Sistemas"
                 university="UNIP"
                 year="2020-2022"
+                degree={degreeADS}
               ></DegreeButton>
             </div>
             <div className='degree'>
@@ -274,6 +277,7 @@ function App() {
                 title="Técnico de Policia Ostesiva e Preservação da Ordem Publica"
                 university="PMESP"
                 year="2017-2018"
+                degree={degreeESSD}
               ></DegreeButton>
             </div>
           </div>
