@@ -18,13 +18,13 @@ function menuShow() {
     menuMobile.classList.toggle('active');
     changeMenuIcon();
 }
-/*
-  function menuClose(){
+
+function menuClose(){
     
-    document.getElementById("idMobileMenu").classList.add("active"); 
+    document.querySelector(".mobile-menu").classList.remove("active"); 
      changeMenuIcon(); 
 }
-*/
+
 
 
 function Header(props) {
