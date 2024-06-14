@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/meu-portifolio/static/css/main.241717c5.css",
-    "main.js": "/meu-portifolio/static/js/main.6a83ba4e.js",
+    "main.css": "/meu-portifolio/static/css/main.0c71caa4.css",
+    "main.js": "/meu-portifolio/static/js/main.cb469c39.js",
     "static/media/contactImage.png": "/meu-portifolio/static/media/contactImage.d02d590d0356734c2388.png",
     "static/media/previewNarutoCard.png": "/meu-portifolio/static/media/previewNarutoCard.252f6b1d3b55f5aa7d1b.png",
     "static/media/aboutImage.png": "/meu-portifolio/static/media/aboutImage.9b18985cf129865a0217.png",
@@ -12,6 +12,7 @@
     "static/media/certificadoLaureaQuinto.JPEG": "/meu-portifolio/static/media/certificadoLaureaQuinto.7a05cc33f89f1240b6cd.JPEG",
     "static/media/soon.png": "/meu-portifolio/static/media/soon.518b2a8f6400903baa62.png",
     "static/media/back5.png": "/meu-portifolio/static/media/back5.8b0ace4b1ad9f3a46097.png",
+    "static/media/previewEneasOS.png": "/meu-portifolio/static/media/previewEneasOS.57702d994bcabde89020.png",
     "static/media/TresAsesLogo.png": "/meu-portifolio/static/media/TresAsesLogo.14490147f27a7c926612.png",
     "static/media/laureaQuintoGrau.png": "/meu-portifolio/static/media/laureaQuintoGrau.fb6309331be15b66de7a.png",
     "static/media/laureaQuartoGrau.png": "/meu-portifolio/static/media/laureaQuartoGrau.975442dd316c3b9697a8.png",
@@ -20,11 +21,11 @@
     "static/media/decLogo.png": "/meu-portifolio/static/media/decLogo.0e63c3715637560b2e39.png",
     "static/media/DegreeIcon.png": "/meu-portifolio/static/media/DegreeIcon.35a51150dbb2c0802d8d.png",
     "index.html": "/meu-portifolio/index.html",
-    "main.241717c5.css.map": "/meu-portifolio/static/css/main.241717c5.css.map",
-    "main.6a83ba4e.js.map": "/meu-portifolio/static/js/main.6a83ba4e.js.map"
+    "main.0c71caa4.css.map": "/meu-portifolio/static/css/main.0c71caa4.css.map",
+    "main.cb469c39.js.map": "/meu-portifolio/static/js/main.cb469c39.js.map"
   },
   "entrypoints": [
-    "static/css/main.241717c5.css",
-    "static/js/main.6a83ba4e.js"
+    "static/css/main.0c71caa4.css",
+    "static/js/main.cb469c39.js"
   ]
 }
