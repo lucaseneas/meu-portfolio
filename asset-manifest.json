@@ -1,9 +1,11 @@
 {
   "files": {
-    "main.css": "/meu-portifolio/static/css/main.0c71caa4.css",
-    "main.js": "/meu-portifolio/static/js/main.cb469c39.js",
+    "main.css": "/meu-portifolio/static/css/main.80562e65.css",
+    "main.js": "/meu-portifolio/static/js/main.2332e8a5.js",
     "static/media/contactImage.png": "/meu-portifolio/static/media/contactImage.d02d590d0356734c2388.png",
+    "static/media/DiplomaESSD.png": "/meu-portifolio/static/media/DiplomaESSD.afdaeb1325c7d050803a.png",
     "static/media/previewNarutoCard.png": "/meu-portifolio/static/media/previewNarutoCard.252f6b1d3b55f5aa7d1b.png",
+    "static/media/DiplomaADS.png": "/meu-portifolio/static/media/DiplomaADS.97d1f04eed81012c709b.png",
     "static/media/aboutImage.png": "/meu-portifolio/static/media/aboutImage.9b18985cf129865a0217.png",
     "static/media/previewPortifolio.png": "/meu-portifolio/static/media/previewPortifolio.0b1baa6aca511fe5641c.png",
     "static/media/certificadoLaureaQuarto.JPEG": "/meu-portifolio/static/media/certificadoLaureaQuarto.afbd54c1eaf0c63b99ea.JPEG",
@@ -21,11 +23,11 @@
     "static/media/decLogo.png": "/meu-portifolio/static/media/decLogo.0e63c3715637560b2e39.png",
     "static/media/DegreeIcon.png": "/meu-portifolio/static/media/DegreeIcon.35a51150dbb2c0802d8d.png",
     "index.html": "/meu-portifolio/index.html",
-    "main.0c71caa4.css.map": "/meu-portifolio/static/css/main.0c71caa4.css.map",
-    "main.cb469c39.js.map": "/meu-portifolio/static/js/main.cb469c39.js.map"
+    "main.80562e65.css.map": "/meu-portifolio/static/css/main.80562e65.css.map",
+    "main.2332e8a5.js.map": "/meu-portifolio/static/js/main.2332e8a5.js.map"
   },
   "entrypoints": [
-    "static/css/main.0c71caa4.css",
-    "static/js/main.cb469c39.js"
+    "static/css/main.80562e65.css",
+    "static/js/main.2332e8a5.js"
   ]
 }
