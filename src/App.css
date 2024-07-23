@@ -327,7 +327,8 @@
 .degreesDivInternal {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:space-around;
+    flex-wrap: wrap;
 }
 
 .degree {
@@ -335,11 +336,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0% 3% 0% 3%;
     text-align: center;
     overflow: hidden;
-    width: 100%;
-
+    width: 400px;
+    aspect-ratio: 1 / 1;
+    padding: 25px;
 }
 
 

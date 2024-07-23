@@ -9,37 +9,22 @@ import pmespLogo from './images/pmespLogo.png';
 import decLogo from './images/decLogo.png';
 import DegreeButton from './components/DegreeButton/DegreeButton';
 import contactImage from './images/contactImage.png';
-import soonImage from './images/soon.png';
-import previewPortifolio from './images/projects/previewPortifolio.png';
-import previewNarutoCard from './images/projects/previewNarutoCard.png';
-import previewEneasOS from './images/projects/previewEneasOS.png';
 import laureaQuintoGrau from './images/laureaQuintoGrau.png';
 import laureaQuartoGrau from './images/laureaQuartoGrau.png';
 import medalhaMMDC from './images/medalhaMMDC.png';
 import certificadoLaureaQuarto from './images/certificados/certificadoLaureaQuarto.JPEG';
 import certificadoLaureaQuinto from './images/certificados/certificadoLaureaQuinto.JPEG';
 import certificadoMedalhaMMDC from './images/certificados/certificadoMedalhaMMDC.JPEG';
-import degreeADS from './images/certificados/DiplomaADS.png';
-import degreeESSD from './images/certificados/DiplomaESSD.png';
 
-var python = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg";
-var html = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg";
-var css = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-var react = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg";
-var angular = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg";
-var java = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg";
-var javaScript = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg";
-var javaSpring = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg";
-var bootstrap = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg";
-var gitHub = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg";
-var mySql = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg";
+import { data } from './data';
 
-export function activeFullScreen(src){
+
+export function activeFullScreen(src) {
   const showInFullScreen = document.querySelector('.showInFullScreen');
-    showInFullScreen.classList.add('active');
+  showInFullScreen.classList.add('active');
 
   const changeImg = document.getElementById('showInFullScreenId');
-    changeImg.setAttribute('src',src);
+  changeImg.setAttribute('src', src);
 }
 
 function changeJobText(job) {
@@ -82,7 +67,7 @@ function App() {
     <div id='home' className="App">
       <ShowInFullScreen ></ShowInFullScreen>
       <div className='masterDiv'>
-        
+
         {/*--------------------------------------------Intro--------------------------------------*/}
         <section className='sectionNome'>
           <div className='firstText'>
@@ -106,50 +91,13 @@ function App() {
             <p>Estou comprometido em aprender continuamente e contribuir para o crescimento da equipe e da empresa como um todo, onde posso aplicar minha paixão pela programação e contribuir para projetos inovadores. Estou em busca de um ambiente de trabalho colaborativo, que ofereça desafios estimulantes e oportunidades para aprendizado contínuo.</p>
             <p>conhecimentos</p>
             <div className='techDivMother'>
-              <div className='techDiv'>
-                <img alt="react" className='techIcon' src={react} ></img>
-                <p className='techText'>React</p>
-              </div>
-              <div className='techDiv'>
-                <img alt="angular" className='techIcon' src={angular} ></img>
-                <p className='techText'>Angular</p>
-              </div>
-              <div className='techDiv'>
-                <img alt="java Spring" className='techIcon' src={javaSpring} ></img>
-                <p className='techText'>Spring</p>
-              </div>
-              <div className='techDiv'>
-                <img alt="html" className='techIcon' src={html} ></img>
-                <p className='techText'>HTML</p>
-              </div>
-              <div className='techDiv'>
-                <img alt="css" className='techIcon' src={css} ></img>
-                <p className='techText'>CSS</p>
-              </div>
-              <div className='techDiv'>
-                <img alt="java" className='techIcon' src={java} ></img>
-                <p className='techText'>Java</p>
-              </div>
-              <div className='techDiv'>
-                <img alt="python" className='techIcon' src={python} ></img>
-                <p className='techText'>Python</p>
-              </div>
-              <div className='techDiv'>
-                <img alt="java Script" className='techIcon' src={javaScript} ></img>
-                <p className='techText'>Java Script</p>
-              </div>
-              <div className='techDiv'>
-                <img alt="Bootstrap" className='techIcon' src={bootstrap} ></img>
-                <p className='techText'>Bootstrap</p>
-              </div>
-              <div className='techDiv'>
-                <img alt="git hub" className='techIcon' src={gitHub} ></img>
-                <p className='techText'>Git Hub</p>
-              </div>
-              <div className='techDiv'>
-                <img alt="MySql" className='techIcon' src={mySql} ></img>
-                <p className='techText'>MySql</p>
-              </div>
+              {data.knowleadges.map((resp, index) => (
+                <div key={index} className='techDiv'>
+                  <img alt={resp.alt} className='techIcon' src={resp.image} ></img>
+                  <p className='techText'>{resp.text}</p>
+                </div>
+              ))}
+
             </div>
           </div>
         </section>
@@ -159,47 +107,22 @@ function App() {
         <section id='projects' className='sectionProject'>
           <h2 className="title"> Projetos</h2>
           <div className='internalProjectDiv'>
-            <div className='projectColumn'>
-              <CardProject
-                image={previewPortifolio}
-                title="Site Portifólio"
-                description="Site para portifolio pessoal para apresentação, contendo diversas sessões. Construido em react.js, html, css e java script"
-                technologies1={html}
-                technologies2={css}
-                technologies3={react}
-                technologies4={javaScript}
-              />
-            </div>
-            <div className='projectColumn'>
-              <CardProject
-                image={previewNarutoCard}
-                title="Naruto Card"
-                description="Projeto de um jogo de cartas baseado no anime naruto, realizado em react.js, disponivel na versão web e responsivo para mobile"
-                technologies1={html}
-                technologies2={css}
-                technologies3={react}
-                technologies4={javaScript}
-                link='/naruto-card'
-              />
-            </div>
-            <div className='projectColumn'>
-              <CardProject
-                image={previewEneasOS}
-                title="Eneas-OS"
-                description="Projeto de simulação de um sistema operacional baseado no widnowns, com icones referentes curriculos e projetos pessoais contruido em react.js, no momento apenas para Desktop"
-                technologies1={html}
-                technologies2={css}
-                technologies3={react}
-                technologies4={javaScript}
-                link='/eneas-os'
-              />
-            </div>
-            <div className='projectColumn'>
-              <CardProject
-                image={soonImage}
-                title="Em Andamento"
-              />
-            </div>
+
+            {data.projects.map((resp, index) => (
+              <div key={index} className='projectColumn'>
+
+                <CardProject
+                  image={resp.image}
+                  title={resp.title}
+                  description={resp.description}
+                  technologies1={resp.technologies1}
+                  technologies2={resp.technologies2}
+                  technologies3={resp.technologies3}
+                  technologies4={resp.technologies4}
+                  link={resp.link}
+                />
+              </div>
+            ))}
           </div>
         </section>
 
@@ -234,7 +157,7 @@ function App() {
               <img src={laureaQuintoGrau}></img>
               <span>
                 <h3>Laurea de Mérito Pessoal de 5º Grau</h3>
-                <button className='buttonAwards'> 
+                <button className='buttonAwards'>
                   <button onClick={() => activeFullScreen(certificadoLaureaQuinto)} className='buttonAwardsInternal'>Ver Certificado</button>
                 </button>
               </span>
@@ -264,22 +187,16 @@ function App() {
         <section id='degrees' className='sectionDegree'>
           <h2 className="title">Formação</h2>
           <div className='degreesDivInternal'>
-            <div className='degree'>
-              <DegreeButton
-                title="Análise e Desenvolvimento de Sistemas"
-                university="UNIP"
-                year="2020-2022"
-                degree={degreeADS}
-              ></DegreeButton>
-            </div>
-            <div className='degree'>
-              <DegreeButton
-                title="Técnico de Policia Ostesiva e Preservação da Ordem Publica"
-                university="PMESP"
-                year="2017-2018"
-                degree={degreeESSD}
-              ></DegreeButton>
-            </div>
+            {data.degrees.map((resp, index) => (
+              <div key={index} className='degree'>
+                <DegreeButton
+                  title={resp.title}
+                  university={resp.university}
+                  year={resp.year}
+                  degree={resp.degree}
+                ></DegreeButton>
+              </div>
+            ))}
           </div>
         </section>
         {/*--------------------------------------------Courses--------------------------------------*/}
@@ -287,47 +204,14 @@ function App() {
         <section id='courses' className='sectionCourses'>
           <h2 className="title">Cursos</h2>
           <div className='coursesDivInternal'>
-            <a href='https://www.udemy.com/certificate/UC-a07dc80f-89a9-4e5b-a6a5-26ab2b7f520e/' target="_blank">
-              <button className='coursesDivButton'>
-                <button className='coursesDivButtonInternal'>Algoritimos e Lógica de Programação 2021 | Udemy</button>
-              </button>
-            </a>
-            <a href='https://www.udemy.com/certificate/UC-2e0e12dd-a187-46ff-8ea9-c1cde6aa671c/' target="_blank">
-              <button className='coursesDivButton'>
-                <button className='coursesDivButtonInternal'>Java – Orientação a Objetos | Udemy</button>
-              </button>
-            </a>
-            <a href='https://cursos.alura.com.br/certificate/b4c33bbe-0f33-4cda-bdb7-3a10166fa12b' target="_blank">
-              <button className='coursesDivButton'>
-                <button className='coursesDivButtonInternal'>GIT Controle e compartilhe seu Código | Alura</button>
-              </button>
-            </a>
-            <a href='https://cursos.alura.com.br/certificate/3f6193e5-2e40-4fe2-94ac-b0ddd639da94' target="_blank">
-              <button className='coursesDivButton'>
-                <button className='coursesDivButtonInternal'>TDD e Java: Testes automatizados com JUnit | Alura</button>
-              </button>
-            </a>
-            <a href='https://www.coursera.org/account/accomplishments/verify/XTJGS3XC76H2?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=pdf_header_button&utm_product=course' target="_blank">
-              <button className='coursesDivButton'>
-                <button className='coursesDivButtonInternal'>USP –Laboratório de Programação Orientada a Objetos – Parte1 | Coursera</button>
-              </button>
-            </a>
-            <a href='https://cursos.alura.com.br/degree/certificate/9e22dfae-de1d-4345-be75-6e5a824d8117' target="_blank">
-              <button className='coursesDivButton'>
-                <button className='coursesDivButtonInternal'>Formação para Certificação Java SE 7 Programmer 80hrs | Alura</button>
-              </button>
-            </a>
-            <a href='https://cursos.alura.com.br/degree/certificate/f81b3877-8e2a-4c61-be8b-5bf7d67ba9fa' target="_blank">
-              <button className='coursesDivButton'>
-                <button className='coursesDivButtonInternal'>Formação Spring Framework 130hrs | Alura</button>
-              </button>
-            </a>
-            <a href='https://portalservicos.usp.br/iddigital/6P8N-9BSX-WCR7-LRZR' target="_blank">
-              <button className='coursesDivButton'>
-                <button className='coursesDivButtonInternal'>USP -Interfaces Web com HTML, CSS e JavaScript EAD 30hrs| USP</button>
-              </button>
-            </a>
-            
+            {data.courses.map((resp, index) => (
+              <a key={index} href={resp.href} target="_blank">
+                <button className='coursesDivButton'>
+                  <button className='coursesDivButtonInternal'>{resp.text}</button>
+                </button>
+              </a>
+            ))}
+
           </div>
         </section>
 
@@ -342,7 +226,7 @@ function App() {
             <div className='divContactRight'>
               <h3><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M5.7 15C4.03377 15.6353 3 16.5205 3 17.4997C3 19.4329 7.02944 21 12 21C16.9706 21 21 19.4329 21 17.4997C21 16.5205 19.9662 15.6353 18.3 15M12 9H12.01M18 9C18 13.0637 13.5 15 12 18C10.5 15 6 13.0637 6 9C6 5.68629 8.68629 3 12 3C15.3137 3 18 5.68629 18 9ZM13 9C13 9.55228 12.5523 10 12 10C11.4477 10 11 9.55228 11 9C11 8.44772 11.4477 8 12 8C12.5523 8 13 8.44772 13 9Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
                 Endereço</h3>
-              <p>Vila Dom Pedro II - São Paulo - SP - Brazil</p>
+              <p>Lousada - Porto - Portugal</p>
               <h3><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 18L9 12M20 18L15 12M3 8L10.225 12.8166C10.8665 13.2443 11.1872 13.4582 11.5339 13.5412C11.8403 13.6147 12.1597 13.6147 12.4661 13.5412C12.8128 13.4582 13.1335 13.2443 13.775 12.8166L21 8M6.2 19H17.8C18.9201 19 19.4802 19 19.908 18.782C20.2843 18.5903 20.5903 18.2843 20.782 17.908C21 17.4802 21 16.9201 21 15.8V8.2C21 7.0799 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V15.8C3 16.9201 3 17.4802 3.21799 17.908C3.40973 18.2843 3.71569 18.5903 4.09202 18.782C4.51984 19 5.07989 19 6.2 19Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
                 Email
               </h3>
@@ -366,17 +250,17 @@ function App() {
               <p>else</p>
               <a href='https://github.com/lucaseneas' target="_blank">
                 <button className='buttonContact'>
-                  <button className='buttonContactInternal'><img src='https://img.icons8.com/?size=100&id=12599&format=png&color=FFFFFF'/>GitHub</button>
+                  <button className='buttonContactInternal'><img src='https://img.icons8.com/?size=100&id=12599&format=png&color=FFFFFF' />GitHub</button>
                 </button>
               </a>
-              
+
             </div>
           </div>
 
         </section>
       </div>
 
-    
+
     </div>
 
   );
