@@ -78,7 +78,7 @@ function App() {
             <h1>MARCOVECHIO</h1>
             <p>Desenvolvedor Junior</p>
           </div>
-          <p className='portifolioTextLeft'>Seja bem vindo ao meu Portifólio<p></p></p>
+          <p className='portifolioTextLeft'>Seja bem vindo ao meu Portfólio<p></p></p>
           <p className='line'></p>
         </section>
 
