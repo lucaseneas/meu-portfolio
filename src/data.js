@@ -5,6 +5,13 @@ import soonImage from './images/soon.png';
 
 import degreeADS from './images/certificados/DiplomaADS.png';
 import degreeESSD from './images/certificados/DiplomaESSD.png';
+import degreeEC from './images/certificados/DiplomaEC.png'
+import certificationAZ900 from './images/certificados/certificationAZ900.png';
+
+
+import iconEC from './images/iconEC.png';
+import iconAZ900 from './images/iconAZ900.png';
+import degreIcon from './images/DegreeIcon.png';
 
 var python = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg";
 var html = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg";
@@ -14,13 +21,13 @@ var angular = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angu
 var java = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg";
 var javaScript = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg";
 var javaSpring = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg";
-var bootstrap = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg";
 var gitHub = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg";
 var mySql = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg";
 var tailwindcss = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg";
 var nextJs = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg";
 var docker = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg";
 var typeScript = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg";
+var azure = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg";
 
 export const data = {
     "projects": [
@@ -136,6 +143,11 @@ export const data = {
             "image": mySql,
             "alt": "MySql",
             "text": "MySql"
+        },
+        {
+            "image": azure,
+            "alt": "Azure",
+            "text": "Azure"
         }
     ],
     "courses" : [
@@ -177,13 +189,30 @@ export const data = {
             "title": "Análise e Desenvolvimento de Sistemas",
             "university" : "UNIP",
             "year" : "2020-2022",
-            "degree" : degreeADS
+            "degree" : degreeADS,
+            "icon" : degreIcon
         },
         {
             "title": "Técnico de Policia Ostesiva e Preservação da Ordem Publica",
             "university" : "PMESP",
             "year" : "2017-2018",
-            "degree" : degreeESSD
+            "degree" : degreeESSD,
+            "icon" : degreIcon
+        },
+        {
+            "title": "Azure Fundamentals AZ-900",
+            "university" : "Microsoft",
+            "year" : "2025",
+            "degree" : certificationAZ900,
+            "icon" : iconAZ900
+        },
+        {
+            "title": "English Exchange",
+            "university" : "EC - English School Malta",
+            "year" : "2024",
+            "degree" : degreeEC,
+            "icon" : iconEC
         }
+        
     ]
 }

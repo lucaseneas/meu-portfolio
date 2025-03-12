@@ -568,7 +568,7 @@
     /*-------------------Jobs-------------------------*/
 
     .sectionJobs {
-        height: 600px;
+        height: auto;
     }
 
     .divJobs {

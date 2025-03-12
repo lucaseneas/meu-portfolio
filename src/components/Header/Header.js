@@ -19,14 +19,6 @@ function menuShow() {
     changeMenuIcon();
 }
 
-function menuClose(){
-    
-    document.querySelector(".mobile-menu").classList.remove("active"); 
-     changeMenuIcon(); 
-}
-
-
-
 function Header(props) {
     return (
         <nav >
@@ -59,14 +51,14 @@ function Header(props) {
             </div>
             <div id="idMobileMenu" className='mobile-menu'>
                     <ul>
-                        <li><button ><a href='#home'>Home</a></button></li>
-                        <li><button ><a href='#jobs'>Experiencias</a></button></li>
-                        <li><button ><a href='#awards'>Premiações</a></button></li>
-                        <li><button ><a href='#courses'>Cursos</a></button></li>
-                        <li><button ><a href='#projects'>Projetos</a></button></li>
-                        <li><button ><a href='#degrees'>Formação</a></button></li>
-                        <li><button ><a href='#about'>Sobre</a></button></li>
-                        <li><button ><a href='#contact'>Contato</a></button></li>
+                        <li><button onClick={menuShow} ><a href='#home'>Home</a></button></li>
+                        <li><button onClick={menuShow}><a href='#jobs'>Experiencias</a></button></li>
+                        <li><button onClick={menuShow}><a href='#awards'>Premiações</a></button></li>
+                        <li><button onClick={menuShow}><a href='#courses'>Cursos</a></button></li>
+                        <li><button onClick={menuShow}><a href='#projects'>Projetos</a></button></li>
+                        <li><button onClick={menuShow}><a href='#degrees'>Formação</a></button></li>
+                        <li><button onClick={menuShow}><a href='#about'>Sobre</a></button></li>
+                        <li><button onClick={menuShow}><a href='#contact'>Contato</a></button></li>
                     </ul>
                 </div>
         </nav>
